@@ -6,4 +6,88 @@
 div.donghua:hover {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+}
+
+a:link {
+  color: #ca5c5c;
+}
+
+/* 未访问链接*/
+a:visited {
+  color: #277fb9;
+}
+
+/* 已访问链接 */
+a:hover {
+  color: #389dc5;
+}
+
+/* 鼠标移动到链接上 */
+a:active {
+  color: #ff3344;
+}
+
+/* 鼠标点击时 */
+
+.tooltip {
+  margin: auto;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(255, 255, 255, 0.603);
+  color: rgb(39, 39, 39);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(218, 218, 218, 0.63) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.nitai {
+  border-radius: 50px;
+  background: #ffd6d6;
+  box-shadow: 20px 20px 60px #d9b6b6,-20px -20px 60px #fff6f6;
 }
